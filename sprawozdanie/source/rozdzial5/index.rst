@@ -3,7 +3,7 @@ Spis repozytoriów
 
 główne repozytorium
 ~~~~~~~~~~~~~~~~~~~~~~
-https://github.com/BlazejUl/Sprawozdanie
+https://github.com/GrzegorzSzczepanek/bazy-danych-spawozdanie
 
 
 pzreglądy literatury
