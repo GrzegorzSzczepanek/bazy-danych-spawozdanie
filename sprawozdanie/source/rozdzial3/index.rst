@@ -1,12 +1,15 @@
+Modele Bazy Danych
+=========================================
 
-
-# Modele Bazy Danych dla Systemu Sklep z Bronią
+:author: Grzegorz Szczepanek
 
 Na podstawie analizy kodu w pliku `bazy.ipynb`, przygotowałem model konceptualny, logiczny i fizyczny dla bazy danych systemu sklepu z bronią.
 
-## 1. Model Konceptualny
 
-model-logiczny.png
+Model Konceptualny
+---------------------
+
+model-konceptualny.png
 
 Model konceptualny reprezentuje wysokopoziomowy widok struktury bazy danych, skupiający się na encjach i relacjach.
 
@@ -29,7 +32,9 @@ Model konceptualny reprezentuje wysokopoziomowy widok struktury bazy danych, sku
 - Jedna kategoria może zawierać wiele produktów (relacja jeden-do-wielu)
 - Użytkownicy są niezależną encją bez bezpośrednich relacji w obecnym modelu
 
-## 2. Model Logiczny
+
+Model Logiczny
+---------------------
 
 model-logiczny.png
 
@@ -70,11 +75,13 @@ Model logiczny rozszerza model konceptualny przez zdefiniowanie atrybutów, typ�
   - kod_pocztowy - kod pocztowy adresu użytkownika
   - data_aktualizacji - data ostatniej aktualizacji danych
 
-## 3. Model Fizyczny
+Model Fizyczny
+---------------------
 
 Model fizyczny definiuje konkretną implementację bazy danych w określonych systemach.
 
-### SQLite
+SQLite
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ```sql
 -- Definicja tabeli Kategorie
@@ -96,7 +103,8 @@ CREATE TABLE IF NOT EXISTS produkty (
 );
 ```
 
-### PostgreSQL
+PostgreSQL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ```sql
 -- Definicja tabeli Kategorie
